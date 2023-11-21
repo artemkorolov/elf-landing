@@ -729,12 +729,10 @@ body {
     }
 }
 
-
-@media (max-width: 767px) {
+@media (max-width: 780px)  {
     html {
         font-size: 50%;
     }
-
     .navigation {
         display: none;
     }
@@ -781,7 +779,7 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 780px) and (max-width: 991px) {
     html {
         font-size: 50%;
     }
@@ -793,20 +791,3 @@ body {
     }
 }
 
-@media (orientation: landscape) {
-    .intro {
-        height: auto;
-    }
-
-    .intro-container {
-        padding-top: 20rem;
-    }
-
-    .intro-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-  }
