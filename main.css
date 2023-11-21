@@ -109,8 +109,8 @@ body {
 }
 
 .badge-icon {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 3.4rem;
+    height: 3.4rem;
     margin: .7rem;
 }
 
@@ -792,3 +792,21 @@ body {
         font-size: 55%;
     }
 }
+
+@media (orientation: landscape) {
+    .intro {
+        height: auto;
+    }
+
+    .intro-container {
+        padding-top: 20rem;
+    }
+
+    .intro-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  }
