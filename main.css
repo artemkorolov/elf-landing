@@ -61,6 +61,8 @@ body {
     --a-hover: #8E4CD1;
     --stroke-color: #003E78;
     --border-color: #6E6E6E;
+    --product-bg-color: #0D082D;
+
 
 
     /* text */
@@ -447,7 +449,7 @@ body {
 
 .cards-item {
     max-width: 37rem;
-    min-height: 60rem;
+    height: auto;
     padding: 2rem;
     border: 0.1rem solid var(--stroke-color);
     border-radius: 1rem;
@@ -481,6 +483,7 @@ body {
 .cards-price {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 3rem;
 }
 
@@ -517,8 +520,20 @@ body {
     background: linear-gradient(to left, #621da7, #003E78);
 }
 
+.counter-inner {
+    display: flex;
+    justify-content: center;
+}
 
+.counter-control {
+    margin-right: 2.5rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
 
+.counter-control:last-child {
+    margin-right: 0;
+}
 
 
 
@@ -670,6 +685,8 @@ body {
 }
 
 
+/* popup-warn */
+
 .popup-warn {
     background-color: rgba(0, 0, 0, 0.9);
     display: none;
@@ -711,6 +728,76 @@ body {
     padding: 1rem 3rem;
 }
 
+
+/* product-buy */
+.product-buy {
+    background-color: #0D082D;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.product-buy-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.product-buy-inner{
+    max-width: 40rem;
+    /* text-align: center; */
+    background-color: var(--product-bg-color);
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+}
+
+.product-buy-inner h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.product-buy-inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-buy-btn {
+    padding: 1rem 3rem;
+}
+
+.close-product-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    font-size: 6rem;
+}
+
+.product-buy-card {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--text-color);
+    font-size: 2rem;
+}
+
+.product-buy-card span {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+.product-buy-img {
+    width: 100px;
+    height: auto;
+    margin: 0 2rem 2rem 0;
+}
+
+.card-wrap-item {
+    display: flex;
+    align-items: center;
+}
+
 /* media */
 @media (max-width: 575px) {
     .about-item {
@@ -729,10 +816,11 @@ body {
     }
 }
 
-@media (max-width: 780px)  {
+@media (max-width: 780px) {
     html {
         font-size: 50%;
     }
+
     .navigation {
         display: none;
     }
@@ -790,4 +878,3 @@ body {
         font-size: 55%;
     }
 }
-
