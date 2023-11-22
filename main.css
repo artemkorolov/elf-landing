@@ -820,7 +820,11 @@ body {
     html {
         font-size: 50%;
     }
-
+    .header {
+        position: fixed;
+        top: 0;
+        background-color: rgba(0,0, 0, 0.7);
+    }
     .navigation {
         display: none;
     }
